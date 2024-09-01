@@ -2,9 +2,15 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Recording Video : https://www.loom.com/share/85643afa23214b7f8b159988f1482e95
+
 First, run the development server:
 
 ```bash
+npm install
+# then
+set up database using backup.sql file and npx prisma migrate dev --name init
+# then
 npm run dev
 # or
 yarn dev

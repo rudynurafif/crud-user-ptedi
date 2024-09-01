@@ -9,6 +9,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import { toast, ToastContainer } from 'react-toastify';
+import Meta from '@/app/components/Meta';
 
 const UpdateUser = () => {
   const [formData, setFormData] = useState({
@@ -62,8 +63,7 @@ const UpdateUser = () => {
 
       if (response.ok) {
         router.push('/');
-      toast.success('Successfully update user');
-
+        toast.success('Successfully update user');
       } else {
         console.error('Failed to update user');
       }
@@ -74,6 +74,7 @@ const UpdateUser = () => {
 
   return (
     <div className='container mx-auto py-8'>
+      <Meta title='Update User Page' />
       <h1 className='text-2xl font-bold mb-4'>Update User</h1>
       <form
         onSubmit={handleSubmit}

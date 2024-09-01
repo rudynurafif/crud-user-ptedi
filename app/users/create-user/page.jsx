@@ -9,6 +9,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
 import { toast } from 'react-toastify';
+import Meta from '@/app/components/Meta';
 
 const UserForm = () => {
   const [formData, setFormData] = useState({
@@ -48,6 +49,7 @@ const UserForm = () => {
 
   return (
     <div className='container mx-auto py-8'>
+      <Meta title='Create User Page' />
       <h1 className='text-2xl font-bold mb-4'>Create User</h1>
       <form
         onSubmit={handleSubmit}

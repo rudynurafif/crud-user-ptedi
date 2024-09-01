@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import Button from '@mui/material/Button';
 import { BeatLoader } from 'react-spinners';
+import Meta from '@/app/components/Meta';
 
 const UserDetail = () => {
   const router = useRouter();
@@ -32,6 +33,7 @@ const UserDetail = () => {
 
   return (
     <div className='container mx-auto py-8 max-w-lg'>
+      <Meta title='User Detail Page' />
       <h1 className='text-2xl font-bold mb-4'>User Detail</h1>
       <div className='bg-white p-6 shadow-md rounded-md'>
         <p>
